@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine&family=Lemonada&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* 62.5% de 16px(padrão do navegador) = 10px */
+  font-size: 62.5%;
+
+  --primary-bg-color: #2c3e50;
+  --secundary-bg-color: #dde3e7;
+  --primary-letter-color: #ecf0f1;
+  --secundary-letter-color: #2c3e50;
+}
+
+body {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.header h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.header,
+.main,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header,
+.footer {
+  height: 6rem;
+  font-family: 'Lemonada', cursive;
+
+  background-color: var(--primary-bg-color);
+  color: var(--primary-letter-color);
+}
+
+.main {
+  height: 80vh;
+  min-height: 30rem;
+  font-size: 10rem;
+  color: var(--secundary-letter-color);
+  font-family: 'Cousine', monospace;
+}
+
+.press-key {
+  background-color: var(--secundary-bg-color);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.footer a {
+  color: yellow;
+  cursor: pointer;
+}
+
+@media (min-width: 750px) {
+  .press-key {
+    background-color: var(--secundary-bg-color);
+    padding: 4rem 6rem;
+    font-size: 3rem;
+  }
+}
+
+.tooltip:before {
+  content: 'copiado';
+
+  font-size: 3rem;
+  font-family: 'Cousine', monospace;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  right: 10%;
+  top: 30%;
+
+  width: 15rem;
+  height: 7rem;
+  background: #6686a7;
+}
