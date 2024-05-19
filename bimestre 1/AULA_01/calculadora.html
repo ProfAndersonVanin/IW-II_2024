@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>EXIBE OPERAÇÕES ENTRE DOIS NÚMEROS</h1>
+    <script>
+        var num1 = parseFloat(prompt('Digite o num1: '))
+        var num2 = parseFloat(prompt('Digite o num2: '))
+
+        soma = num1 + num2
+        sub = num1 - num2
+        mult = num1 * num2
+        divisao = num1 / num2
+
+        //MOSTRANDO NA TELA DO NAVEGADOR (JANELA ==> DOCUMENT)
+        document.writeln('<p>O primeiro número é ' + num1 + '</p>')        
+        document.writeln('<p>O segundo número é ' + num2 + '</p>')
+        document.write('<br>')
+
+        //INTERPOLAÇÃO DE VALORES - TEMPLATE STRING
+        document.write(` Num1 = ${num1} e Num2 = ${num2} `)
+        document.write('<br>')
+        document.write(`A soma de ${num1} com ${num2} é ${soma} <br>`)
+        document.write(`A subtração de ${num1} com ${num2} é ${sub} <br>`)
+        document.write(`A multiplicação de ${num1} com ${num2} é ${mult} <br>`)
+        document.write(`A divisão de ${num1} com ${num2} é ${divisao} <br>`)
+
+
+
+        // alert('A soma de num1 e num2 é: ' + soma + 
+        // '\nA subtração é: ' + sub + 
+        // '\nA multiplicação é: ' + mult + 
+        // '\nA divisão é: ' + divisao)
+    </script>
+    
+</body>
+</html>
